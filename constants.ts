@@ -1,11 +1,22 @@
 import { Lead, ClientProject } from './types';
 
-export const APP_NAME = "LSR"; // Luxury Stone Restoration
+export const APP_NAME = "Pro-Granite Services";
+
+export const COMPANY_INFO = {
+  name: "Pro-Granite Services L.L.C.",
+  address: "305 S. Church St., Manning S.C. 29102",
+  phone: "803-953-7692",
+  email: "Prograniteservices@gmail.com",
+  experience: {
+    own: 20,
+    father: 45
+  }
+};
 
 export const MOCK_LEADS: Lead[] = [
   {
     id: 'L-101',
-    zipCode: '90210',
+    zipCode: '29102',
     serviceType: 'Marble Countertop Crack Repair',
     estimatedValue: 1200,
     status: 'open',
@@ -14,7 +25,7 @@ export const MOCK_LEADS: Lead[] = [
   },
   {
     id: 'L-102',
-    zipCode: '90046',
+    zipCode: '29042',
     serviceType: 'Travertine Floor Polishing',
     estimatedValue: 3500,
     status: 'open',
@@ -23,7 +34,7 @@ export const MOCK_LEADS: Lead[] = [
   },
   {
     id: 'L-103',
-    zipCode: '90402',
+    zipCode: '29150',
     serviceType: 'Granite Chip Fill',
     estimatedValue: 450,
     status: 'open',
@@ -57,6 +68,6 @@ export const FAQS = [
   },
   {
     question: "How do you vet subcontractors?",
-    answer: "The LSR National Artisan Network accepts less than 5% of applicants. We require a minimum of 7 years experience with exotic stones, background checks, and a practical exam on color theory and honing techniques."
+    answer: "The Pro-Granite National Network accepts less than 5% of applicants. We require a minimum of 7 years experience with exotic stones, background checks, and a practical exam on color theory and honing techniques."
   }
 ];

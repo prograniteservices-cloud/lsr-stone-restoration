@@ -46,10 +46,10 @@ const HeroAnimation: React.FC = () => {
     const wallRight = Bodies.rectangle(width + 30, height / 2, 60, height, { isStatic: true });
 
     // Create falling letters (Represented as blocks for stability, could be SVG vertices in prod)
-    // We will simulate L, S, R letters
+    // We will simulate P, G, S letters
     const letters: Matter.Body[] = [];
     const colors = ['#D4AF37', '#8a7020', '#333333'];
-    const letterLabels = ['L', 'S', 'R'];
+    const letterLabels = ['P', 'G', 'S'];
 
     letterLabels.forEach((label, index) => {
         const xPos = (width / 2) + ((index - 1) * 100);
@@ -60,9 +60,6 @@ const HeroAnimation: React.FC = () => {
                 fillStyle: 'transparent',
                 strokeStyle: colors[index],
                 lineWidth: 2,
-                // In a real Matter.js implementation, we would use sprites or custom rendering loop 
-                // to draw text. For this demo, we use a simple texture trick or just colored boxes.
-                // However, let's keep it abstract blocks for "Architectural" feel.
             }
         });
         
