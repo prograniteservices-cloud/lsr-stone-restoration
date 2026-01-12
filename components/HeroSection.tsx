@@ -7,7 +7,7 @@ const HeroSection = () => {
   const [stone, setStone] = useState('Granite');
   const [estimate, setEstimate] = useState(null);
 
-  const serviceZips = ['29102', '29150', '29154', '29040', '29153'];
+  const serviceZips = ['XXXXX', '29150', '29154', '29040', '29153'];
 
   const handleCheckZip = (e) => {
     e.preventDefault(); 

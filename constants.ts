@@ -4,8 +4,8 @@ export const APP_NAME = "Pro-Granite Services";
 
 export const COMPANY_INFO = {
   name: "Pro-Granite Services L.L.C.",
-  address: "305 S. Church St., Manning S.C. 29102",
-  phone: "803-953-7692",
+  address: "XXXX X. XXXXXX XX., XXXXXXX X.X. XXXXX",
+  phone: "XXX-XXX-XXXX",
   email: "Prograniteservices@gmail.com",
   experience: {
     own: 20,
@@ -16,7 +16,7 @@ export const COMPANY_INFO = {
 export const MOCK_LEADS: Lead[] = [
   {
     id: 'L-101',
-    zipCode: '29102',
+    zipCode: 'XXXXX',
     serviceType: 'Marble Countertop Crack Repair',
     estimatedValue: 1200,
     status: 'open',

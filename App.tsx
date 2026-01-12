@@ -30,7 +30,7 @@ const App: React.FC = () => {
   const handleZipSearch = () => {
     if (zipCode.length < 5) return;
     // Mock Logic
-    if (['29102', '90210', '10001'].includes(zipCode)) {
+    if (['XXXXX', '90210', '10001'].includes(zipCode)) {
       setZipResult('found');
     } else {
       setZipResult('waitlist');
