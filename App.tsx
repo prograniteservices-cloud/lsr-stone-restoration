@@ -104,7 +104,7 @@ const App: React.FC = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled || isMobileMenuOpen || view !== 'landing' ? 'py-4 bg-obsidian/95 backdrop-blur-lg border-b border-white/5' : 'py-6 bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <button onClick={() => navigateTo('landing')} className="font-serif text-xl md:text-2xl font-bold tracking-tighter text-white z-50 flex items-center gap-2">
-            Pro-Granite<span className="hidden md:inline"> Services</span><span className="text-gold">.</span>
+            <span className="text-3xl font-serif font-extrabold text-white">Pro-Granite Services</span><span className="text-gold">.</span>
           </button>
           
           <nav className="hidden lg:flex items-center gap-8 text-sm font-medium tracking-wide">
@@ -421,7 +421,7 @@ const App: React.FC = () => {
       </section>
 
       {/* AI Analyzer Section */}
-      <section id="analyzer" className="py-24 px-6 bg-charcoal relative overflow-hidden">
+      <section id="visual-ai" className="py-24 px-6 bg-charcoal relative overflow-hidden">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
            <div>
              <h2 className="text-4xl font-serif text-white mb-6">Precision Diagnosis. <br/><span className="text-gold italic">Instant Feasibility.</span></h2>
