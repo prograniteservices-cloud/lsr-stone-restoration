@@ -109,8 +109,8 @@ const App: React.FC = () => {
           
           <nav className="hidden lg:flex items-center gap-8 text-sm font-medium tracking-wide">
             <button onClick={() => navigateTo('about')} className={`hover:text-gold transition-colors ${view === 'about' ? 'text-gold' : 'text-gray-300'}`}>About Us</button>
-            <button onClick={() => navigateTo('landing')} className="hover:text-gold transition-colors text-gray-300">Visual AI</button>
-            <button onClick={() => navigateTo('landing')} className="hover:text-gold transition-colors text-gray-300">Calculator</button>
+            <button onClick={() => document.getElementById('visual-ai')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-gold transition-colors text-gray-300">Visual AI</button>
+            <button onClick={() => document.getElementById('calculator')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-gold transition-colors text-gray-300">Calculator</button>
             <button onClick={() => navigateTo('contact')} className={`hover:text-gold transition-colors ${view === 'contact' ? 'text-gold' : 'text-gray-300'}`}>Contact</button>
           </nav>
 
@@ -137,8 +137,8 @@ const App: React.FC = () => {
           <div className="lg:hidden absolute top-0 left-0 w-full h-screen bg-obsidian/98 backdrop-blur-xl flex flex-col items-center justify-center animate-fade-in z-40">
             <nav className="flex flex-col gap-6 items-center text-center">
               <button onClick={() => navigateTo('about')} className="text-3xl font-serif text-white hover:text-gold transition-colors">About Us</button>
-              <button onClick={() => navigateTo('landing')} className="text-3xl font-serif text-white hover:text-gold transition-colors">Visual AI</button>
-              <button onClick={() => navigateTo('landing')} className="text-3xl font-serif text-white hover:text-gold transition-colors">Calculator</button>
+              <button onClick={() => { document.getElementById('visual-ai')?.scrollIntoView({ behavior: 'smooth' }); setIsMobileMenuOpen(false); }} className="text-3xl font-serif text-white hover:text-gold transition-colors">Visual AI</button>
+              <button onClick={() => { document.getElementById('calculator')?.scrollIntoView({ behavior: 'smooth' }); setIsMobileMenuOpen(false); }} className="text-3xl font-serif text-white hover:text-gold transition-colors">Calculator</button>
               <button onClick={() => navigateTo('contact')} className="text-3xl font-serif text-white hover:text-gold transition-colors">Contact Us</button>
               
               <div className="w-16 h-[1px] bg-white/10 my-4"></div>
