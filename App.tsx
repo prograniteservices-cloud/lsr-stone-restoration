@@ -368,7 +368,7 @@ const App: React.FC = () => {
       <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-             <video autoPlay muted loop playsInline className="absolute top-0 left-0 w-full h-full object-cover opacity-30 z-0"><source src="/granite-bg.mp4" type="video/mp4" /></video>
+             <video autoPlay muted loop playsInline className="absolute top-0 left-0 w-full h-full object-cover animate-pulse-slow scale-110 opacity-30 z-0"><source src="/granite-bg.mp4" type="video/mp4" /></video>
              <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/80 to-transparent"></div>
         </div>
 
