@@ -40,13 +40,13 @@ const App: React.FC = () => {
   const handleLogin = (role: UserRole) => {
     setUserRole(role);
     setView('landing'); // Re-renders main view but with different dashboard content
-    window.scrollTo(0,0);
+    if (newView === "landing") window.scrollTo(0,0);
   };
 
   const navigateTo = (newView: View) => {
     setView(newView);
     setIsMobileMenuOpen(false);
-    window.scrollTo(0,0);
+    if (newView === "landing") window.scrollTo(0,0);
   };
 
   // --- Render Conditional Logic for Dashboards ---
@@ -310,7 +310,7 @@ const App: React.FC = () => {
 
              {/* Form */}
              <div className="lg:col-span-2 bg-charcoal border border-white/5 p-8 rounded-2xl">
-                <h3 className="text-2xl font-serif text-white mb-6">Send us a Message</h3>
+                <h3 className="text-3xl font-serif font-bold tracking-[0.25em] text-white mb-6">Send us a Message</h3>
                 <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">
